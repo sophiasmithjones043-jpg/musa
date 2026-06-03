@@ -38,14 +38,14 @@ const imgs = [
 ];
 
 const products = {
-Dresses: ["Floral Maxi", "Silk Evening Gown", "Casual Summer Dress", "Vintage Tea", "Black Evening", "White Lace", "Red Cocktail", "Blue Velvet", "Emerald Green", "Gold Sequin", "Blush Pink", "Navy Blue", "Champagne", "Burgundy Wine", "Sage Green", "Lavender Dream", "Mint Fresh", "Coral Sunset", "Peach Blossom", "Rose Gold", "Silver Shimmer", "Bronze Shine", "Copper Glow", "Pearl White", "Ivory Classic", "Cream Elegant", "Off-White", "Taupe Neutral", "Beige Cozy", "Sand Dune", "Caramel Swirl", "Chocolate Rich", "Coffee Brown", "Espresso Dark", "Mocha Dream", "Honey Gold", "Amber Glow", "Citrine Bright", "Topaz Sparkle", "Sapphire Blue", "Ruby Red", "Diamond Clear", "Opal Shimmer", "Moonstone", "Sunrise Orange", "Sunset Purple", "Ocean Wave", "Forest Green", "Midnight Black", "Snow White", "Sunset Gown", "Midnight Dress", "Starlight", "Moonbeam", "Sunburst", "Starfall", "Galaxy Print", "Cloud Nine", "Dreamy Mist", "Twilight Zone", "Dawn Break", "Dusk Fall", "Nightfall", "Starry Night", "Crystal Clear", "Frosted Glass", "Ice Queen", "Snow Princess", "Winter Frost", "Spring Blossom", "Summer Heat", "Fall Leaves", "Garden Party", "Beach Breeze", "Mountain Peak", "Valley Green", "River Blue", "Sky High", "Wind Dance", "Fire Flame", "Water Drop", "Earth Tone", "Air Light", "Ether Glow", "Cosmic Ray", "Star Dust", "Solar Flare", "Lunar Light", "Stellar Shine", "Planet Purple", "Galaxy Gold", "Universe Blue", "Atom Red", "Molecule Green", "Cell Division", "Nucleus Heart", "Quantum Leap", "Relativity", "Gravity Pull", "Magnetism", "Electricity", "Plasma Glow", "Energy Force", "Power Surge", "Volt Spark", "Current Flow", "Wave Motion"],
-Tops: ["Casual Linen", "Embroidered Blouse", "Silk Camisole", "Cotton Tee", "Striped Shirt", "Floral Print", "Solid Color", "Patterned", "Graphic Design", "Vintage Tee", "Modern Top", "Elegant Blouse", "Simple Shirt", "Bold Statement", "Subtle Tone", "Neon Bright", "Pastel Soft", "Earth Tone", "Metallic Shine", "Hologram Top", "Glitter Shirt", "Sequin Sparkle", "Beaded Top", "Embossed Texture", "Raised Print", "Smooth Finish", "Rough Texture", "Silky Feel", "Cotton Blend", "Poly Mix", "Wool Blend", "Linen Blend", "Bamboo Fabric", "Hemp Top", "Organic Cotton", "Recycled Material", "Sustainable Fashion", "Eco-Friendly", "Green Living", "Natural Fiber", "Biodegradable", "Compostable", "Recyclable", "Zero Waste", "Low Impact", "Carbon Neutral", "Climate Positive", "Ethically Made", "Fair Trade", "Artisan Crafted", "Handwoven", "Hand-Dyed", "Small Batch", "Limited Edition", "Exclusive Design", "One of a Kind", "Collector's Item", "Investment Piece", "Heirloom Quality", "Timeless Classic", "Modern Minimal", "Artistic Expression", "Creative Vision", "Innovative Design", "Cutting Edge", "Trendsetting", "Fashion Forward", "Style Icon", "Iconic Look", "Signature Style", "Personal Brand", "Statement Maker", "Conversation Starter", "Head Turner", "Eye Catcher", "Show Stopper", "Attention Grabber", "Standout Piece", "Spotlight Star", "Center Stage", "Leading Role", "Featured Player", "Main Character", "Supporting Cast", "Ensemble Member", "Chorus Line", "Ballet Grace", "Dance Moves", "Movement Flow", "Dynamic Energy", "Static Pose", "Still Life", "Living Art"],
-Bags: ["Quilted Chain", "Boho Tote", "Crossbody Bag", "Clutch Purse", "Shoulder Bag", "Backpack", "Hobo Bag", "Satchel", "Messenger Bag", "Bucket Bag", "Box Bag", "Frame Bag", "Structured Tote", "Soft Suede", "Leather Classic", "Faux Leather", "Vegan Leather", "Canvas Bag", "Woven Straw", "Rattan Weave", "Jute Natural", "Cotton Canvas", "Linen Blend", "Wool Felt", "Polyester Durable", "Nylon Waterproof", "Plastic Hybrid", "Metal Frame", "Golden Hardware", "Silver Accents", "Rose Gold", "Copper Tone", "Bronze Finish", "Black Detail", "White Trim", "Beige Neutral", "Taupe Shade", "Gray Charcoal", "Blue Navy", "Green Forest", "Red Crimson", "Purple Plum", "Pink Blush", "Orange Bright", "Yellow Sunny", "Brown Chocolate", "Tan Camel", "Cream Ivory", "Pearl White", "Snow Frost", "Diamond Sparkle", "Ruby Rich", "Sapphire Deep", "Emerald Lush", "Topaz Golden", "Amethyst Purple", "Citrine Yellow", "Garnet Red", "Opal Shimmer", "Moonstone Glow", "Sunstone Warm", "Labradorite", "Amazonite Blue", "Aventurine Green", "Carnelian Orange", "Jasper Red", "Quartz Clear", "Marble Pattern", "Granite Texture", "Limestone Pale", "Sandstone Beige", "Slate Gray", "Basalt Black", "Obsidian Shiny", "Turquoise Blue", "Jade Green", "Lapis Blue", "Malachite Green"],
-Jewelry: ["Pearl Drop Earrings", "Gold Bangle", "Silver Ring", "Diamond Necklace", "Ruby Pendant", "Emerald Bracelet", "Sapphire Earring", "Cubic Zirconia", "Costume Jewelry", "Stainless Steel", "Titanium", "Tungsten", "Platinum", "Gold 18k", "Gold 14k", "Gold 10k", "White Gold", "Rose Gold", "Yellow Gold", "Palladium", "Silver Sterling", "Silver Plated", "Vermeil", "Gold Filled", "Beaded Strand", "Pearl String", "Crystal Drops", "Tassel Charm", "Chain Link", "Toggle Clasp", "Magnetic Close", "Spring Ring", "Box Lock", "Barrel Hinge", "Snap Closure", "Push Back", "Screw Back", "Clip On", "Pierced", "Non-Pierced", "Convertible", "Layering Piece", "Statement Maker", "Delicate Dainty", "Bold Chunky", "Geometric Modern", "Organic Natural", "Minimalist Simple", "Maximalist Drama", "Symmetrical Balance", "Asymmetrical Edge", "Radial Design", "Linear Pattern", "Circular Shape", "Square Form", "Triangle Point", "Diamond Cut", "Hexagon Unique", "Octagon Eight", "Star Burst", "Heart Love", "Cross Faith", "Moon Night", "Sun Day", "Planet Space", "Atom Science", "Cell Life", "Flower Nature", "Leaf Green", "Tree Branch", "Root Deep", "Seed Growth", "Bird Flight", "Fish Water", "Dragon Myth", "Phoenix Rise", "Unicorn Magic", "Lion Power", "Eagle Vision", "Snake Wisdom", "Owl Knowledge", "Wolf Pack"],
-Shoes: ["Block Heel Sandals", "Strappy Heels", "Flat Loafers", "Sneakers", "Boots", "Ballet Flats", "Moccasins", "Slip-ons", "Pumps", "Wedges", "Platforms", "Kitten Heels", "Stilettos", "Thongs", "Slides", "Oxfords", "Derby", "Penny Loafer", "Tassel Loafer", "Boat Shoe", "Deck Shoe", "Driving Moc", "Huaraches", "Sandals", "Flip Flops", "Birkenstock", "Crocs", "Clogs", "Mules", "Scuffs", "Slippers", "Indoor Shoe", "Outdoor Shoe", "Water Proof", "Water Resistant", "Breathable", "Cushioned", "Memory Foam", "Gel Insert", "Air Pocket", "Spring Support", "Shock Absorber", "Arch Support", "Heel Cup", "Toe Box", "Wide Fit", "Narrow Fit", "Standard Fit", "Roomy Fit", "Snug Fit", "Custom Fit", "Ortho Friendly", "Diabetic Friendly", "Plantar Support", "High Arch", "Flat Foot", "Neutral Pronation", "Overpronation", "Supination", "Gait Support", "Rotation Control", "Stability", "Flexibility", "Rigidity", "Motion Control", "Performance", "Comfort Focused", "Style Conscious", "Casual Vibe", "Formal Dress", "Business Casual", "Athletic Wear", "Running Shoe", "Walking Shoe", "Hiking Boot", "Mountain Climbing", "Trail Running", "Cross Training", "Tennis Court", "Basketball", "Soccer Cleats", "Baseball", "Gymnastics", "Dance Floor", "Ice Skating", "Roller Skate", "Skateboard Shoe", "Surfing Bootie", "Scuba Socks", "Rock Climbing", "Mountaineering"],
-Scarves: ["Pashmina Scarf", "Silk Scarf", "Cotton Scarf", "Wool Scarf", "Cashmere", "Mohair", "Angora", "Alpaca", "Merino", "Lambswool", "Camel Hair", "Vicuña", "Shahtoosh", "Bamboo", "Hemp", "Linen", "Jute", "Ramie", "Sisal", "Abaca", "Piña", "Tencel", "Lyocell", "Viscose", "Rayon", "Acetate", "Nylon", "Polyester", "Acrylic", "Fleece", "Microfiber", "Chenille", "Bouclé", "Velvet", "Velveteen", "Corduroy", "Suede", "Leather", "Faux Fur", "Faux Leather", "Printed Pattern", "Solid Color", "Striped Design", "Checkered Pattern", "Plaid Weave", "Argyle", "Geometric Shape", "Abstract Art", "Floral Print", "Animal Pattern", "Paisley Design", "Damask", "Jacquard", "Brocade", "Tapestry", "Embroidered", "Beaded", "Sequined", "Fringed", "Tasseled", "Ruffled", "Gathered", "Pleated", "Quilted", "Padded", "Lined", "Unlined", "Single Layer", "Double Layer", "Reversible", "Convertible", "Infinity Loop", "Oversized", "Regular Size", "Petite", "Plus Size", "Lightweight", "Heavyweight", "Insulated", "Thermal", "Moisture Wicking", "Breathable", "Stretchy", "Non-Stretch", "Wrinkle Free", "Washable"],
-Sunglasses: ["Cat-Eye Sunglasses", "Aviator", "Wayfarer", "Round Frame", "Square Frame", "Oval Frame", "Heart Shape", "Shield Design", "Butterfly Wing", "Oversized Large", "Petite Small", "Medium Fit", "Adjustable Fit", "Universal Fit", "Polarized Lens", "Non-Polarized", "UV Protection", "100% UVA", "100% UVB", "400 UV", "Anti-Glare", "Anti-Reflective", "Gradient Tint", "Solid Color", "Mirrored", "Flash Mirror", "Photochromic", "Transition", "Light Reactive", "Blue Light Block", "Night Vision", "Driver Lens", "Fishing Lens", "Ski Lens", "Water Lens", "Sports Lens", "Outdoor Lens", "Fashion Lens", "Trendy Style", "Vintage Look", "Retro Vibe", "Modern Design", "Minimalist", "Maximalist", "Bold Statement", "Subtle Look", "Unisex", "Men's Cut", "Women's Cut", "Child Size", "Youth Size", "Adult Size", "Metal Frame", "Plastic Frame", "Acetate", "Titanium", "Aluminum", "Stainless Steel", "Gold Plated", "Silver Plated", "Rose Gold", "Two Tone", "Multi Color", "Monochrome", "Rainbow Spectrum", "Neon Bright", "Pastel Soft", "Earth Tone", "Metallic Shine", "Matte Finish", "Gloss Finish", "Textured Surface", "Smooth Surface", "Flexible Hinge", "Spring Hinge", "Fixed Hinge", "Adjustable Nose", "Padded Temple", "Padded Bridge", "Comfortable Fit"],
-Nail: ["French Tip Kit", "Gel Nail Polish", "Nail Art Sticker", "Acrylic Powder", "Builder Gel", "Base Coat", "Top Coat", "Matte Finish", "Glossy Finish", "Glitter Blend", "Sparkle Effect", "Chrome Effect", "Hologram Dust", "Confetti Mix", "Flake Texture", "Glitter Dust", "Pearl Pigment", "Metallic Powder", "Ombre Gradient", "Ombré Kit", "Tie Dye", "Marble Effect", "Water Marble", "Stamping Plate", "Stamper Tool", "Scraper", "Dotting Tool", "Brush Set", "Rhinestone", "Crystal Stone", "Gem Stone", "Nail Sticker", "Decal Design", "Foil Leaf", "Gold Foil", "Silver Foil", "Copper Foil", "Holographic Foil", "Chrome Foil", "Mirror Powder", "Magnetic Powder", "Thermal Gel", "Color Changing", "Mood Ring", "Light Reactive", "Glow in Dark", "UV Responsive", "Florescent", "Neon Bright", "Pastel Shade", "Soft Color", "Bold Hue", "Earth Tone", "Neutral Color", "Nude Shade", "Pink Pop", "Red Fire", "Purple Plum", "Blue Ocean", "Green Forest", "Yellow Sunny", "Orange Burst", "White Pearl", "Black Onyx", "Gray Smoke", "Brown Chocolate", "Beige Camel", "Cream Vanilla", "Glossy Shine", "Matte Velvety", "Satin Smooth", "Semi-Gloss", "Gel Based", "Regular Polish", "Dip Powder", "Enamel Paint", "Water Based", "Non-Toxic", "Low Odor", "Long Lasting", "Quick Dry", "Fast Cure", "LED Lamp", "UV Lamp", "Lamp Free", "No Lamp Needed"]
+Dresses: ["Floral Maxi", "Silk Evening Gown", "Casual Summer Dress", "Vintage Tea", "Black Evening", "White Lace", "Red Cocktail", "Blue Velvet", "Emerald Green", "Gold Sequin", "Blush Pink", "Navy"],
+Tops: ["Casual Linen", "Embroidered Blouse", "Silk Camisole", "Cotton Tee", "Striped Shirt", "Floral Print", "Solid Color", "Patterned", "Graphic Design", "Vintage Tee", "Modern Top", "Elegant Blouse"],
+Bags: ["Quilted Chain", "Boho Tote", "Crossbody Bag", "Clutch Purse", "Shoulder Bag", "Backpack", "Hobo Bag", "Satchel", "Messenger Bag", "Bucket Bag", "Box Bag", "Frame Bag", "Structured Tote", "Leather"],
+Jewelry: ["Pearl Drop Earrings", "Gold Bangle", "Silver Ring", "Diamond Necklace", "Ruby Pendant", "Emerald Bracelet", "Sapphire Earring", "Cubic Zirconia", "Costume Jewelry", "Stainless Steel", "Gold Plated"],
+Shoes: ["Block Heel Sandals", "Strappy Heels", "Flat Loafers", "Sneakers", "Boots", "Ballet Flats", "Moccasins", "Slip-ons", "Pumps", "Wedges", "Platforms", "Kitten Heels", "Stilettos", "Thongs", "Oxfords"],
+Scarves: ["Pashmina Scarf", "Silk Scarf", "Cotton Scarf", "Wool Scarf", "Cashmere", "Mohair", "Angora", "Alpaca", "Merino", "Lambswool", "Camel Hair", "Vicuña", "Shahtoosh", "Bamboo", "Hemp", "Linen"],
+Sunglasses: ["Cat-Eye Sunglasses", "Aviator", "Wayfarer", "Round Frame", "Square Frame", "Oval Frame", "Heart Shape", "Shield Design", "Butterfly Wing", "Oversized Large", "Petite Small", "Medium Size"],
+Nail: ["French Tip Kit", "Gel Nail Polish", "Nail Art Sticker", "Acrylic Powder", "Builder Gel", "Base Coat", "Top Coat", "Matte Finish", "Glossy Finish", "Glitter Blend", "Sparkle Effect", "Chrome"]
 };
 
 let id = 1;
@@ -75,7 +75,8 @@ price: price,
 oldPrice: oldPrice,
 img: imgs[Math.floor(Math.random() * imgs.length)],
 affiliate: "#",
-badge: badges[Math.floor(Math.random() * badges.length)]
+badge: badges[Math.floor(Math.random() * badges.length)],
+createdAt: Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000
 });
 });
 });
@@ -107,7 +108,7 @@ const S = `
 .cat-grid{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:32px}
 .cat-btn-3d{position:relative;padding:0;border:none;background:none;cursor:pointer;outline:none;transition:transform .1s;width:100px;height:100px}
 .cat-btn-3d:active{transform:translateY(3px)}
-.cat-face{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px;border-radius:8px;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:.5px;color:#a89880;border:2px solid #ddd;background:#fff;transition:all .3s;width:100%;height:100%;position:relative;z-index:1}
+.cat-face{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px;border-radius:8px;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;background:#f5f0e8;color:#7a6e62;border:2px solid #e8e0d5;z-index:1;position:relative}
 .cat-shadow{position:absolute;bottom:-6px;left:2px;right:2px;height:100%;border-radius:8px;z-index:0;background:#050505;transition:all .3s}
 .cat-icon{font-size:32px;display:block}
 .cat-label{display:block;text-align:center;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#7a6e62}
@@ -118,6 +119,10 @@ const S = `
 .ml-section{padding:40px 16px;max-width:1200px;margin:0 auto}
 .ml-section-title{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:#0f0f0f;margin-bottom:28px;text-align:center;letter-spacing:3px;text-transform:uppercase}
 .ml-section-title::after{content:'';display:block;width:40px;height:2px;background:#c8b89a;margin:10px auto 0}
+.ml-sort-controls{display:flex;gap:10px;justify-content:center;margin-bottom:24px;flex-wrap:wrap}
+.ml-sort-btn{background:#0f0f0f;color:#f0e6d3;border:1px solid #c8b89a;padding:8px 16px;cursor:pointer;font-weight:600;font-size:12px;border-radius:4px;transition:all .2s;font-family:'Inter',sans-serif}
+.ml-sort-btn.active{background:#c8b89a;color:#0f0f0f}
+.ml-sort-btn:hover{background:#c8b89a;color:#0f0f0f}
 .ml-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px}
 .ml-card{background:#fff;border-radius:2px;overflow:hidden;border:1px solid #e8e0d5;transition:transform .25s,box-shadow .25s;cursor:pointer;position:relative}
 .ml-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px #1a1a1a22;border-color:#c8b89a}
@@ -131,13 +136,15 @@ const S = `
 .ml-badge{position:absolute;top:0;left:0;background:#0f0f0f;color:#f0e6d3;padding:5px 14px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
 .ml-badge.sale{background:#c8b89a;color:#0f0f0f}
 .ml-badge.new{background:#3a3a3a}
-.ml-wish-btn{position:absolute;top:10px;right:12px;background:#ffffffcc;border:1px solid #e8e0d5;font-size:18px;cursor:pointer;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.ml-wish-btn{position:absolute;top:10px;right:12px;background:#ffffffcc;border:1px solid #e8e0d5;font-size:18px;cursor:pointer;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:10}
 .ml-wish-btn:hover{background:#fff;border-color:#c8b89a}
+.ml-copy-btn{position:absolute;top:50px;right:12px;background:#0f0f0f;border:1px solid #c8b89a;color:#f0e6d3;font-size:12px;cursor:pointer;border-radius:4px;padding:6px 10px;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:10;font-weight:600}
+.ml-copy-btn:hover{background:#c8b89a;color:#0f0f0f}
 .ml-buy-btn{width:100%;background:#0f0f0f;color:#f0e6d3;border:none;padding:12px 0;font-weight:700;font-size:12px;cursor:pointer;letter-spacing:2px;text-transform:uppercase;transition:all .2s;font-family:'Inter',sans-serif}
 .ml-buy-btn:hover{background:#c8b89a;color:#0f0f0f}
 .ml-tag{display:inline-block;background:#f5f0e8;color:#7a6e62;padding:2px 10px;font-size:10px;font-weight:700;margin-bottom:6px;border:1px solid #e8e0d5;letter-spacing:1px;text-transform:uppercase}
 .ml-cart-overlay{position:fixed;top:0;right:0;width:min(380px,100vw);height:100vh;background:#0f0f0f;box-shadow:-4px 0 40px #00000088;z-index:200;display:flex;flex-direction:column;border-left:2px solid #c8b89a}
-.ml-cart-header{background:#1a1a1a;color:#f0e6d3;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;border-bottom:1px solid #333}
+.ml-cart-header{background:#1a1a1a;color:#f0e6d3;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
 .ml-cart-item{display:flex;gap:14px;align-items:center;padding:16px 20px;border-bottom:1px solid #1e1e1e}
 .ml-cart-item-img{width:60px;height:60px;border-radius:2px;object-fit:cover}
 .ml-cart-footer{padding:22px 24px;border-top:1px solid #c8b89a44;margin-top:auto}
@@ -152,7 +159,7 @@ const S = `
 .ml-search-wrap{text-align:center;margin-bottom:24px}
 .ml-search{padding:13px 24px;border:1.5px solid #c8b89a;background:#fff;color:#1a1a1a;font-size:14px;width:min(380px,100%);outline:none;font-family:'Inter',sans-serif}
 .ml-search:focus{border-color:#0f0f0f}
-.ml-toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);background:#0f0f0f;color:#f0e6d3;padding:13px 32px;z-index:999;font-weight:700;font-size:13px;box-shadow:0 8px 30px #00000055;animation:fadeUp .3s ease-out}
+.ml-toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);background:#0f0f0f;color:#f0e6d3;padding:13px 32px;z-index:999;font-weight:700;font-size:13px;box-shadow:0 8px 30px #000000aa;animation:fadeUp .3s ease-out;font-family:'Inter',sans-serif}
 @keyframes fadeUp{from{opacity:0;transform:translateX(-50%) translateY(10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
 .ml-footer{background:#0f0f0f;padding:50px 16px;text-align:center;border-top:2px solid #c8b89a}
 .ml-account-stat{background:#1a1a1a;padding:18px 32px;text-align:center;border:1px solid #333}
@@ -175,15 +182,39 @@ const [products,setProducts]=useState(INIT_PRODUCTS);
 const [adminForm,setAdminForm]=useState({name:"",category:"Dresses",price:"",oldPrice:"",img:"",affiliate:"",badge:""});
 const [editId,setEditId]=useState(null);
 const [toast,setToast]=useState("");
+const [sortBy,setSortBy]=useState("newest");
 
 const showToast=msg=>{setToast(msg);setTimeout(()=>setToast(""),2200)};
-const filtered=products.filter(p=>(cat==="All"||p.category===cat)&&p.name.toLowerCase().includes(search.toLowerCase()));
+
+// Sort products based on sortBy
+const getSortedProducts = (prods) => {
+let sorted = [...prods];
+if (sortBy === "newest") {
+sorted.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+} else if (sortBy === "price-low") {
+sorted.sort((a, b) => a.price - b.price);
+} else if (sortBy === "price-high") {
+sorted.sort((a, b) => b.price - a.price);
+} else if (sortBy === "popular") {
+sorted.sort((a, b) => (b.badge ? 1 : 0) - (a.badge ? 1 : 0));
+}
+return sorted;
+};
+
+const filtered=getSortedProducts(products.filter(p=>(cat==="All"||p.category===cat)&&p.name.toLowerCase().includes(search.toLowerCase())));
 const addToCart=p=>{setCart(c=>{const ex=c.find(x=>x.id===p.id);return ex?c.map(x=>x.id===p.id?{...x,qty:x.qty+1}:x):[...c,{...p,qty:1}]});showToast("Added to cart ✓")};
 const toggleWish=id=>setWishlist(w=>w.includes(id)?w.filter(x=>x!==id):[...w,id]);
 const removeCart=id=>setCart(c=>c.filter(x=>x.id!==id));
 const total=cart.reduce((s,x)=>s+x.price*x.qty,0);
-const handleAuth=()=>{if(authMode==="login"){if(authForm.email&&authForm.password){setUser({name:authForm.email.split("@")[0],email:authForm.email});setPage("home");showToast("Welcome back ✓")}}else if(authForm.name&&authForm.email&&authForm.password){setUser({name:authForm.name,email:authForm.email});setPage("home");showToast("Account created ✓")}};
-const handleAdminSave=()=>{if(!adminForm.name||!adminForm.price)return;if(editId){setProducts(p=>p.map(x=>x.id===editId?{...x,...adminForm,price:+adminForm.price,oldPrice:+adminForm.oldPrice}:x));showToast("Product updated ✓");setEditId(null);setAdminForm({name:"",category:"Dresses",price:"",oldPrice:"",img:"",affiliate:"",badge:""})}else{setProducts(p=>[...p,{id:Math.max(...p.map(x=>x.id))+1,...adminForm,price:+adminForm.price,oldPrice:+adminForm.oldPrice}]);showToast("Product added ✓");setAdminForm({name:"",category:"Dresses",price:"",oldPrice:"",img:"",affiliate:"",badge:""})}};
+
+const copyProductLink = (product) => {
+const productLink = `${window.location.origin}${window.location.pathname}?product=${product.id}`;
+navigator.clipboard.writeText(productLink);
+showToast("Product link copied! ✓");
+};
+
+const handleAuth=()=>{if(authMode==="login"){if(authForm.email&&authForm.password){setUser({name:authForm.email.split("@")[0],email:authForm.email});setPage("home");showToast("Welcome back ✓")}}else{if(authForm.email&&authForm.password&&authForm.name){setUser({name:authForm.name,email:authForm.email});setPage("home");showToast("Account created ✓")}}setAuthForm({name:"",email:"",password:""})};
+const handleAdminSave=()=>{if(!adminForm.name||!adminForm.price)return;if(editId){setProducts(p=>p.map(x=>x.id===editId?{...x,...adminForm,price:+adminForm.price,oldPrice:+adminForm.oldPrice}:x));setEditId(null);showToast("Updated ✓")}else{setProducts(p=>[{id:Math.max(...p.map(x=>x.id))+1,...adminForm,price:+adminForm.price,oldPrice:+adminForm.oldPrice,qty:1,createdAt:Date.now()},...p]);showToast("Added ✓")}setAdminForm({name:"",category:"Dresses",price:"",oldPrice:"",img:"",affiliate:"",badge:""})};
 const startEdit=p=>{setAdminForm({name:p.name,category:p.category,price:p.price,oldPrice:p.oldPrice,img:p.img,affiliate:p.affiliate,badge:p.badge});setEditId(p.id)};
 const deleteProduct=id=>{setProducts(p=>p.filter(x=>x.id!==id));showToast("Deleted")};
 const exportJSON=()=>{const b=new Blob([JSON.stringify(products,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="products.json";a.click()};
@@ -201,6 +232,7 @@ const Card=({p})=>(
 <div className="ml-card" onClick={()=>setSelected(p)}>
 {p.badge&&<span className={bc(p.badge)}>{p.badge}</span>}
 <button className="ml-wish-btn" onClick={e=>{e.stopPropagation();toggleWish(p.id)}}>{wishlist.includes(p.id)?"♥":"♡"}</button>
+<button className="ml-copy-btn" onClick={e=>{e.stopPropagation();copyProductLink(p)}} title="Copy product link">🔗</button>
 <img src={p.img} alt={p.name} className="ml-card-img"/>
 <div className="ml-card-body">
 <span className="ml-tag">{p.category}</span>
@@ -219,7 +251,7 @@ return (
 <nav className="ml-nav">
 <div className="ml-logo" onClick={()=>setPage("home")}>✦ MUSA <span>LOOM</span></div>
 <div className="ml-nav-links">
-{[{id:"home",l:"Home"},{id:"shop",l:"Shop"},{id:"wishlist",l:`Wishlist (${wishlist.length})`},user?{id:"account",l:user.name}:{id:"login",l:"Login"},user?.email==="admin@musaloom.com"?{id:"admin",l:"⚙ Admin"}:null].filter(Boolean).map(({id,l})=>(
+{[{id:"home",l:"Home"},{id:"shop",l:"Shop"},{id:"wishlist",l:`Wishlist (${wishlist.length})`},user?{id:"account",l:user.name}:{id:"login",l:"Login"},user?.email==="admin@musaloom.com"?{id:"admin",l:"Admin"}:null].filter(Boolean).map(({id,l})=>(
 <button key={id} className={`ml-nav-btn${page===id?" active":""}`} onClick={()=>setPage(id)}>{l}</button>
 ))}
 <button className="ml-cart-btn" onClick={()=>setCartOpen(true)}>🛒 {cart.reduce((s,x)=>s+x.qty,0)}</button>
@@ -240,7 +272,7 @@ return (
 <h2 className="ml-section-title">Shop by Category</h2>
 <div className="cat-grid">{CATEGORIES.slice(1).map(c=><Cat3D key={c} c={c}/>)}</div>
 <h2 className="ml-section-title" style={{marginTop:20}}>Featured Picks</h2>
-<div className="ml-grid">{products.filter(p=>p.badge).slice(0,4).map(p=><Card key={p.id} p={p}/>)}</div>
+<div className="ml-grid">{getSortedProducts(products.filter(p=>p.badge)).slice(0,4).map(p=><Card key={p.id} p={p}/>)}</div>
 </div>
 <div className="stripe"/>
 <div className="ml-footer">
@@ -252,6 +284,12 @@ return (
 {page==="shop"&&<div className="ml-section">
 <h2 className="ml-section-title">Shop All</h2>
 <div className="ml-search-wrap"><input className="ml-search" placeholder="Search products..." value={search} onChange={e=>setSearch(e.target.value)}/></div>
+<div className="ml-sort-controls">
+<button className={`ml-sort-btn${sortBy==="newest"?" active":""}`} onClick={()=>setSortBy("newest")}>Newest First</button>
+<button className={`ml-sort-btn${sortBy==="price-low"?" active":""}`} onClick={()=>setSortBy("price-low")}>Price: Low to High</button>
+<button className={`ml-sort-btn${sortBy==="price-high"?" active":""}`} onClick={()=>setSortBy("price-high")}>Price: High to Low</button>
+<button className={`ml-sort-btn${sortBy==="popular"?" active":""}`} onClick={()=>setSortBy("popular")}>Most Popular</button>
+</div>
 <div className="cat-grid">{CATEGORIES.map(c=><Cat3D key={c} c={c}/>)}</div>
 <div className="ml-grid">
 {filtered.map(p=><Card key={p.id} p={p}/>)}
@@ -262,7 +300,7 @@ return (
 {page==="wishlist"&&<div className="ml-section">
 <h2 className="ml-section-title">My Wishlist</h2>
 <div className="ml-grid">
-{products.filter(p=>wishlist.includes(p.id)).map(p=><Card key={p.id} p={p}/>)}
+{getSortedProducts(products.filter(p=>wishlist.includes(p.id))).map(p=><Card key={p.id} p={p}/>)}
 {wishlist.length===0&&<div style={{gridColumn:"1/-1",textAlign:"center",color:"#aaa",padding:50}}>No items yet.</div>}
 </div>
 </div>}
@@ -275,8 +313,8 @@ return (
 <div style={{fontFamily:"'Cormorant Garamond',serif",fontWeight:700,fontSize:24,color:"#0f0f0f",letterSpacing:2}}>{user.name.toUpperCase()}</div>
 <div style={{color:"#aaa",marginBottom:28,fontSize:13}}>{user.email}</div>
 <div style={{display:"flex",gap:12,justifyContent:"center",marginBottom:28}}>
-<div className="ml-account-stat"><div style={{fontWeight:800,color:"#f0e6d3",fontSize:26}}>{cart.reduce((s,x)=>s+x.qty,0)}</div><div style={{fontSize:11,color:"#7a6e62",letterSpacing:1,textTransform:"uppercase"}}>In Cart</div></div>
-<div className="ml-account-stat"><div style={{fontWeight:800,color:"#f0e6d3",fontSize:26}}>{wishlist.length}</div><div style={{fontSize:11,color:"#7a6e62",letterSpacing:1,textTransform:"uppercase"}}>Wishlist</div></div>
+<div className="ml-account-stat"><div style={{fontWeight:800,color:"#f0e6d3",fontSize:26}}>{cart.reduce((s,x)=>s+x.qty,0)}</div><div style={{fontSize:11,color:"#7a6e62",letterSpacing:1,textTransform:"uppercase",fontWeight:700}}>Items in Cart</div></div>
+<div className="ml-account-stat"><div style={{fontWeight:800,color:"#f0e6d3",fontSize:26}}>{wishlist.length}</div><div style={{fontSize:11,color:"#7a6e62",letterSpacing:1,textTransform:"uppercase",fontWeight:700}}>Wishlist Items</div></div>
 </div>
 <button className="ml-buy-btn" style={{padding:"13px 0"}} onClick={()=>{setUser(null);setPage("home");showToast("Logged out")}}>Logout</button>
 </div>
@@ -296,8 +334,8 @@ return (
 {page==="admin"&&user?.email==="admin@musaloom.com"&&<div className="ml-section">
 <h2 className="ml-section-title">Admin Dashboard</h2>
 <div style={{display:"flex",gap:12,justifyContent:"center",marginBottom:28}}>
-<button onClick={exportJSON} style={{background:"#0f0f0f",color:"#f0e6d3",border:"none",padding:"11px 28px",cursor:"pointer",fontWeight:700,fontSize:12,letterSpacing:2,textTransform:"uppercase"}}>⬇ Export JSON</button>
-<button onClick={exportCSV} style={{background:"#c8b89a",color:"#0f0f0f",border:"none",padding:"11px 28px",cursor:"pointer",fontWeight:700,fontSize:12,letterSpacing:2,textTransform:"uppercase"}}>⬇ Export CSV</button>
+<button onClick={exportJSON} style={{background:"#0f0f0f",color:"#f0e6d3",border:"none",padding:"11px 28px",cursor:"pointer",fontWeight:700,fontSize:12,letterSpacing:2,textTransform:"uppercase"}}>Export JSON</button>
+<button onClick={exportCSV} style={{background:"#c8b89a",color:"#0f0f0f",border:"none",padding:"11px 28px",cursor:"pointer",fontWeight:700,fontSize:12,letterSpacing:2,textTransform:"uppercase"}}>Export CSV</button>
 </div>
 <div className="ml-section-box" style={{marginBottom:28}}>
 <h3 style={{color:"#0f0f0f",marginBottom:18,fontFamily:"'Cormorant Garamond',serif",fontSize:20,letterSpacing:2}}>{editId?"Edit Product":"Add New Product"}</h3>
@@ -332,14 +370,14 @@ return (
 {cart.map(item=>(
 <div key={item.id} className="ml-cart-item">
 <img src={item.img} alt={item.name} className="ml-cart-item-img"/>
-<div style={{flex:1}}><div style={{fontWeight:600,fontSize:14,color:"#f0e6d3",fontFamily:"'Cormorant Garamond',serif"}}>{item.name}</div><div style={{color:"#c8b89a",fontWeight:700}}>${item.price} × {item.qty}</div></div>
+<div style={{flex:1}}><div style={{fontWeight:600,fontSize:14,color:"#f0e6d3",fontFamily:"'Cormorant Garamond',serif"}}>{item.name}</div><div style={{color:"#c8b89a",fontWeight:700}}>${item.price} x {item.qty}</div></div>
 <button style={{background:"none",border:"none",cursor:"pointer",color:"#7a6e62",fontSize:18}} onClick={()=>removeCart(item.id)}>✕</button>
 </div>
 ))}
 </div>
 <div className="ml-cart-footer">
 <div style={{display:"flex",justifyContent:"space-between",fontWeight:700,fontSize:16,marginBottom:18,color:"#f0e6d3",letterSpacing:2}}><span style={{textTransform:"uppercase",fontSize:13}}>Total</span><span>${total.toFixed(2)}</span></div>
-<button style={{width:"100%",background:"#f0e6d3",color:"#0f0f0f",border:"none",padding:"14px 0",fontWeight:700,fontSize:12,cursor:"pointer",letterSpacing:2,textTransform:"uppercase"}} onClick={()=>{showToast("Thanks for your order! 🎉");setCart([]);setCartOpen(false)}}>Checkout</button>
+<button style={{width:"100%",background:"#f0e6d3",color:"#0f0f0f",border:"none",padding:"14px 0",fontWeight:700,fontSize:12,cursor:"pointer",letterSpacing:2,textTransform:"uppercase"}} onClick={()=>{showToast("Order placed ✓");setCart([]);setCartOpen(false)}}>Checkout</button>
 </div>
 </div>
 </>}
@@ -354,12 +392,13 @@ return (
 <div className="ml-modal-body">
 <span className="ml-tag">{selected.category}</span>
 <h3 style={{margin:"10px 0",fontSize:24,fontFamily:"'Cormorant Garamond',serif",color:"#0f0f0f",letterSpacing:1}}>{selected.name}</h3>
-<div className="ml-price-row"><span className="ml-price" style={{fontSize:22}}>${selected.price}</span><span className="ml-old-price">${selected.oldPrice}</span><span style={{color:"#2a7a2a",fontSize:12,fontWeight:700}}>Save {Math.round((1-selected.price/selected.oldPrice)*100)}%</span></div>
+<div className="ml-price-row"><span className="ml-price" style={{fontSize:22}}>${selected.price}</span><span className="ml-old-price">${selected.oldPrice}</span><span style={{color:"#2a7a2a",fontWeight:600,fontSize:12}}>Save ${(selected.oldPrice-selected.price).toFixed(2)}</span></div>
 <p style={{color:"#7a6e62",fontSize:14,marginBottom:20,lineHeight:1.6}}>Handpicked affiliate product. Purchase securely from our trusted partner store.</p>
 <div style={{display:"flex",gap:10}}>
 <button className="ml-buy-btn" style={{flex:1,padding:"13px 0"}} onClick={()=>{addToCart(selected);setSelected(null)}}>Add to Cart</button>
-<a href={selected.affiliate} target="_blank" rel="noreferrer" style={{flex:1,padding:"13px 0",background:"#c8b89a",color:"#0f0f0f",textDecoration:"none",display:"flex",alignItems:"center",justifyContent:"center",fontWeight:700,fontSize:12,letterSpacing:2,textTransform:"uppercase",borderRadius:2}}>View</a>
+<a href={selected.affiliate} target="_blank" rel="noreferrer" style={{flex:1,padding:"13px 0",background:"#c8b89a",color:"#0f0f0f",textDecoration:"none",display:"flex",alignItems:"center",justifyContent:"center",fontWeight:700,fontSize:12,letterSpacing:2,textTransform:"uppercase",borderRadius:2,cursor:"pointer",transition:"all .2s"}} onMouseOver={e=>e.target.style.background="#b39f8f"} onMouseOut={e=>e.target.style.background="#c8b89a"}>Buy Now</a>
 </div>
+<button style={{width:"100%",marginTop:12,background:"#f5f0e8",color:"#0f0f0f",border:"1px solid #c8b89a",padding:"10px 0",fontWeight:600,fontSize:12,letterSpacing:1.5,textTransform:"uppercase",cursor:"pointer",borderRadius:2,transition:"all .2s"}} onClick={()=>{copyProductLink(selected);}} onMouseOver={e=>{e.target.style.background="#c8b89a";e.target.style.color="#f5f0e8"}} onMouseOut={e=>{e.target.style.background="#f5f0e8";e.target.style.color="#0f0f0f"}}>🔗 Copy Product Link</button>
 </div>
 </div>
 </div>}
